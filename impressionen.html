@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <!-- Meta-Angaben für den Zeichensatz und das Ansichtsfenster, optimiert für mobile Geräte -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Titel der Seite, der in der Registerkarte des Browsers angezeigt wird -->
+    <title>Impressionen - Spielstöbli am See</title>
+    <!-- Verknüpfung zur externen CSS-Datei, die das Styling der Seite definiert -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header-Bereich: Enthält das Logo und die Navigation -->
+    <header>
+        <!-- Logo der Webseite, hier einfach als Text dargestellt -->
+        <img class="welcome-img" src="images/logo navigation.jpg" alt="Logo der Spielgruppe" width="auto" height="70">
+        
+        <!-- Checkbox für das mobile Menü-Icon (Hamburger-Icon) -->
+        <input type="checkbox" id="menu-toggle">
+        <!-- Label, das als Hamburger-Icon dient und das Menü für mobile Geräte steuert -->
+        <label for="menu-toggle" class="menu-icon">&#9776;</label>
+        
+        <!-- Navigation: Liste mit Links zu den verschiedenen Seiten der Website -->
+        <nav>
+            <ul class="nav-links">
+                <!-- Jeder Listeneintrag ist ein Navigationslink zu einer Seite der Website -->
+                <li><a href="index.html">Startseite</a></li> <!-- Link zur Startseite -->
+                <li><a href="spielgruppe.html">Spielgruppe</a></li> <!-- Link zur Seite über die Spielgruppe -->
+                <li><a href="leiterin.html">Leiterin</a></li> <!-- Link zur Seite über die Leiterin -->
+                <li><a href="angebot.html">Angebot</a></li> <!-- Link zur Seite mit den Angeboten -->
+                <li><a href="anmeldung.html">Anmeldung</a></li> <!-- Link zur Anmeldeseite -->
+                <li><a href="impressionen.html">Impressionen</a></li> <!-- Link zur Seite mit Impressionen (Bildergalerie) -->
+                <li><a href="kontakt.html">Kontakt</a></li> <!-- Link zur Kontaktseite -->
+            </ul>
+        </nav>
+    </header>
+    <main>
+
+        <style>
+
+        /* Slideshow-Container-Stile */
+        .slideshow-container {
+            max-width: 1000px; /* Maximale Breite der Slideshow */
+            position: relative; /* Positionierung relativ zum Container */
+            margin: auto; /* Zentriert den Container horizontal */
+            height: 600px; /* Höhe der Slideshow */
+        }
+
+        /* Stile für die einzelnen Slides */
+        .slides {
+            position: absolute; /* Absolute Positionierung für Überlagerung */
+            width: 100%; /* Breite der Slides auf 100% setzen */
+            height: 100%; /* Höhe der Slides auf 100% setzen */
+            opacity: 0; /* Slides sind standardmäßig unsichtbar */
+            transition: opacity 1s ease-in-out; /* Sanfte Überblendung zwischen den Slides */
+        }
+
+        /* Bildstil für die Slideshow-Bilder */
+        .slides img {
+            width: 100%; /* Bildbreite auf 100% setzen */
+            height: 100%; /* Bildhöhe auf 100% setzen */
+            object-fit: cover; /* Bild wird skaliert und bei Bedarf beschnitten */
+        }
+
+        /* Der erste Slide wird standardmäßig angezeigt */
+        .slides.show {
+            opacity: 1; /* Sichtbar machen */
+        }
+
+@keyframes slideshow {
+    0% { opacity: 0; }      /* Am Anfang unsichtbar */
+    8.33% { opacity: 1; }   /* Bis 8.33% wird das Bild sichtbar */
+    25% { opacity: 1; }     /* Bis 25% bleibt das Bild sichtbar */
+    33.33% { opacity: 0; }  /* Ab 33.33% wird das Bild unsichtbar */
+    100% { opacity: 0; }    /* Bis zum Ende bleibt das Bild unsichtbar */
+}
+        
+
+        /* Animation für den ersten Slide */
+        .slide1 { animation: slideshow 18s infinite; animation-delay: 0s; } /* Start sofort */
+        /* Animation für den zweiten Slide */
+        .slide2 { animation: slideshow 18s infinite; animation-delay: 3s; } /* Start nach 3 Sekunden */
+        /* Animation für den dritten Slide */
+        .slide3 { animation: slideshow 18s infinite; animation-delay: 6s; } /* Start nach 6 Sekunden */
+        /* Animation für den vierten Slide */
+        .slide4 { animation: slideshow 18s infinite; animation-delay: 9s; } /* Start nach 9 Sekunden */
+        /* Animation für den fünften Slide */
+        .slide5 { animation: slideshow 18s infinite; animation-delay: 12s; } /* Start nach 12 Sekunden */
+        /* Animation für den sechsten Slide */
+        .slide6 { animation: slideshow 18s infinite; animation-delay: 15s; } /* Start nach 15 Sekunden */
+
+    </style>
+</head>
+<body>
+
+<h1>Impressionen</h1>
+
+<div class="slideshow-container">
+    <!-- Bilder für die Slideshow -->
+    <div class="slides slide1">
+        <img src="images/impression1.jpg" alt="Impression 1">
+    </div>
+
+    <div class="slides slide2">
+        <img src="images/impression2.jpg" alt="Impression 2">
+    </div>
+
+    <div class="slides slide3">
+        <img src="images/impression3.jpg" alt="Impression 3">
+    </div>
+
+    <div class="slides slide4">
+        <img src="images/impression4.jpg" alt="Impression 4">
+    </div>
+
+    <div class="slides slide5">
+        <img src="images/impression5.jpg" alt="Impression 5">
+    </div>
+
+    <div class="slides slide6">
+        <img src="images/impression6.jpg" alt="Impression 6">
+    </div>
+</div>
+
+</main>
+
+    <!-- Footer-Bereich am unteren Ende der Seite -->
+    <footer>
+        <!-- Copyright-Hinweis -->
+        &copy; 2024 Spielgruppe Aesch. Alle Rechte vorbehalten.
+    </footer>
+</body>
+</html>
