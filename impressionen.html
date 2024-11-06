@@ -46,13 +46,19 @@
             height: 600px; /* Höhe der Slideshow */
         }
 
+/* Mobile Ansicht */
+@media (max-width: 1300px) {
+    .slideshow-container {
+        max-width: 500px; /* Maximale Breite der Slideshow */
+        height: 300px; /* Reduzierte Höhe für kleinere Bildschirme */
+    }
+}
         /* Stile für die einzelnen Slides */
         .slides {
             position: absolute; /* Absolute Positionierung für Überlagerung */
             width: 100%; /* Breite der Slides auf 100% setzen */
             height: 100%; /* Höhe der Slides auf 100% setzen */
             opacity: 0; /* Slides sind standardmäßig unsichtbar */
-            transition: opacity 1s ease-in-out; /* Sanfte Überblendung zwischen den Slides */
         }
 
         /* Bildstil für die Slideshow-Bilder */
@@ -62,32 +68,24 @@
             object-fit: cover; /* Bild wird skaliert und bei Bedarf beschnitten */
         }
 
-        /* Der erste Slide wird standardmäßig angezeigt */
-        .slides.show {
-            opacity: 1; /* Sichtbar machen */
-        }
 
 @keyframes slideshow {
-    0% { opacity: 0; }      /* Am Anfang unsichtbar */
-    8.33% { opacity: 1; }   /* Bis 8.33% wird das Bild sichtbar */
-    25% { opacity: 1; }     /* Bis 25% bleibt das Bild sichtbar */
-    33.33% { opacity: 0; }  /* Ab 33.33% wird das Bild unsichtbar */
-    100% { opacity: 0; }    /* Bis zum Ende bleibt das Bild unsichtbar */
+            0% { opacity: 0; }       /* Am Anfang unsichtbar */
+            18.75% { opacity: 1; }      /* Bild wird eingeblendet */
+            37.5% { opacity: 0; }      /* Bild wird wieder unsichtbar */
 }
-        
 
         /* Animation für den ersten Slide */
-        .slide1 { animation: slideshow 18s infinite; animation-delay: 0s; } /* Start sofort */
+        .slide1 { animation: slideshow 20s infinite; animation-delay: 0s; } /* Start sofort */
         /* Animation für den zweiten Slide */
-        .slide2 { animation: slideshow 18s infinite; animation-delay: 3s; } /* Start nach 3 Sekunden */
+        .slide2 { animation: slideshow 20s infinite; animation-delay: 4s; } /* Start nach 4 Sekunden */
         /* Animation für den dritten Slide */
-        .slide3 { animation: slideshow 18s infinite; animation-delay: 6s; } /* Start nach 6 Sekunden */
+        .slide3 { animation: slideshow 20s infinite; animation-delay: 8s; } /* Start nach 8 Sekunden */
         /* Animation für den vierten Slide */
-        .slide4 { animation: slideshow 18s infinite; animation-delay: 9s; } /* Start nach 9 Sekunden */
-        /* Animation für den fünften Slide */
-        .slide5 { animation: slideshow 18s infinite; animation-delay: 12s; } /* Start nach 12 Sekunden */
-        /* Animation für den sechsten Slide */
-        .slide6 { animation: slideshow 18s infinite; animation-delay: 15s; } /* Start nach 15 Sekunden */
+        .slide4 { animation: slideshow 20s infinite; animation-delay: 12s; } /* Start nach 12 Sekunden */
+        /* Animation für den vierten Slide */
+        .slide5 { animation: slideshow 20s infinite; animation-delay: 16s; } /* Start nach 16 Sekunden */
+
 
     </style>
 </head>
