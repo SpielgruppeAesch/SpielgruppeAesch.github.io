@@ -1,0 +1,47 @@
+/* Google Fonts Einbindung */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+body {
+    background-image: url('background.jpg'); /* Pfad zum Bild */
+    background-size: cover; /* Bild auf die gesamte Seite ausdehnen */
+    background-position: center; /* Bild zentrieren */
+    background-repeat: no-repeat; /* Verhindert Wiederholung des Bildes */
+    display: flex; /* Aktiviert Flexbox */
+    justify-content: center; /* Zentriert horizontal */
+    align-items: center; /* Zentriert vertikal */
+    }
+/* Header */
+h1 {    
+    text-align: center; /* Header zentrieren */
+    font-size: 2rem;
+    font-family: 'ozuka-mincho-pr6n', serif; /* Verwendung der Schriftart */
+}
+h2 {
+    text-align: center; /* Header zentrieren */
+    font-family: 'ozuka-mincho-pr6n', serif; /* Verwendung der Schriftart */
+    font-size: 1.5rem;
+}
+h3 { /* Aesch */
+    text-align: center; /* Header zentrieren */
+    font-size: 1.75rem;
+    font-family: 'ozuka-mincho-pr6n', serif; /* Verwendung der Schriftart */
+    margin: 5px 0;
+}
+h4 { /* Ermensee */
+    text-align: center; /* Header zentrieren */
+    font-size: 1.75em;
+    font-family: 'ozuka-mincho-pr6n', serif; /* Verwendung der Schriftart */
+    margin: 5px 0;
+}
+.container {
+    justify-content: center; /* Zentriert das Bild horizontal */
+    align-items: center; /* Zentriert das Bild vertikal, falls der Container eine bestimmte Höhe hat */
+    height: 100%; /* Höhe des Containers, wenn notwendig */
+    padding:0px 30px;
+    background-color: #fff; /* Weißer Hintergrund */
+    border-radius: 10px;
+    margin: 5px;
+}
+.container-img {
+    max-width: 100%; /* Sicherstellen, dass das Bild nicht über den Container hinausgeht */
+    height: auto;
+}
