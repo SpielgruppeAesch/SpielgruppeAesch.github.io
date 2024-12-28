@@ -1,0 +1,189 @@
+/* Google Fonts Einbindung */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+
+/* Header-Stile */
+header {
+    background-color: #2c753c;
+    padding: 10px 10px;
+    position: sticky;
+    border: none; /* Entfernt alle Ränder */
+    top: 0;
+    z-index: 1000;
+    font-family: 'kozuka-mincho-pr6n', serif; /* Verwendung der Schriftart */
+    display: flex; /* Flexbox verwenden, um Inhalte nebeneinander anzuordnen */
+    justify-content: space-between; /* Platz zwischen Logo und Menü */
+    align-items: center; /* Zentriert das Logo und Menü vertikal */
+    font-size: 1.5rem;
+}
+
+.logo {
+    font-size: 1.7rem;
+    font-weight: 700;
+    color: #fff;
+    font-family: 'kozuka-mincho-pr6n', serif; /* Verwendung der Schriftart */
+}
+
+/* Navigation-Stile */
+nav {
+    display: flex;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 0px; /* Abstand zwischen den Menüpunkten */
+}
+
+.nav-links li {
+    margin: 0;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 20px;
+    font-weight: 500;
+    transition: background 0.3s, color 0.3s;
+    border-radius: 5px;
+}
+
+.nav-links a:hover {
+    background-color: #339058; /* Etwas dunkleres Grün */
+}
+
+/* Hamburger-Icon für mobile Navigation */
+.menu-icon {
+    display: none;
+    font-size: 1.5rem;
+    color: #fff;
+    cursor: pointer;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+/* Mobile Navigation */
+@media (max-width: 1350px) {
+    .menu-icon {
+        display: block;
+        margin: 10px;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center; /* Zentriert den Text innerhalb des Containers */
+        align-items: center; /* Zentriert das Logo und Menü vertikal */
+        margin: 10px;
+        padding: 10px;
+        gap: 20px; /* Abstand zwischen den Menüpunkten */
+    }
+
+    #menu-toggle:checked + .menu-icon + nav .nav-links {
+        display: flex;
+    }
+
+    .nav-links a {
+        margin: 0;
+        padding: 10px 20px;
+
+    }
+
+    /* Anpassung, damit Logo und Menü untereinander angezeigt werden */
+    header {
+        display: flex;
+        flex-direction: column; /* Ändert das Layout zu einer Spalte auf mobilen Geräten */
+        align-items: center; /* Zentriert die Items innerhalb des Headers */
+        text-align: center; /* Zentriert den Text innerhalb des Containers */
+        align-items: center; /* Zentriert das Logo und Menü vertikal */
+        position: relative;
+    }
+}
+/* Header */
+h1 {
+    text-align: center; /* Header zentrieren */
+    font-size: 2rem;
+    font-family: 'ozuka-mincho-pr6n', serif; /* Verwendung der Schriftart */
+    color:  #2c753c; /* Farbe für Überschriften */
+    padding: 5px 0; /* Fügt etwas Abstand oben und unten hinzu */
+}
+h2 {
+    text-align: center; /* Header zentrieren */
+    font-size: 1.75rem;
+    padding: 5px;
+}
+h3 {
+    text-align: center; /* Header zentrieren */
+    font-size: 1.5rem;
+    padding: 5px;
+}
+/* Absätze */
+p {
+    text-align: justify; /* Zentriert den Text innerhalb der Absätze */
+    hyphens: auto;
+    margin: 0 auto; /* Zentriert den Absatzblock (wenn max-width definiert) */
+    max-width: 1000px; /* Begrenzte Breite für bessere Lesbarkeit */
+    font-size: 1.5rem;
+    font-family: 'ozuka-mincho-pr6n', serif; /* Verwendung der Schriftart */
+    padding: 10px;
+}
+/* Footer-Stile */
+footer {
+    padding:50px 0;
+    text-align: center; /* Zentriert den Inhalt im Footer */
+}
+/* Entfernt Standardabstände und Innenabstände */
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.zentriert {
+    text-align: center; /* Zentriert den Text in Absätzen mit der Klasse 'zentriert' */
+    hyphens: none; /* Deaktiviert automatische Trennungen */
+}
+
+/*Google Maps */
+
+.map-container { 
+    display: flex;
+    margin: 0 auto; /* Zentriert den Absatzblock (wenn max-width definiert) */
+    max-width: 800px; /* Begrenzte Breite für bessere Lesbarkeit */
+    padding: 10px 0; /* Fügt etwas Abstand oben und unten hinzu */
+}
+
+/* Bilder */
+
+.welcome-img {
+    border-radius: 3px;
+}
+.group-image {
+    display: flex;
+    justify-content: center; /* Zentriert das Bild horizontal */
+    align-items: center; /* Zentriert das Bild vertikal, falls der Container eine bestimmte Höhe hat */
+    height: 100%; /* Höhe des Containers, wenn notwendig */
+}
+.group-image img {
+    max-width: 100%; /* Sicherstellen, dass das Bild nicht über den Container hinausgeht */
+    height: auto;
+}
+
+/* Liste */
+
+ul {
+            list-style-position: inside; /* Listensymbole bleiben drinnen */
+            padding: 10px;
+            text-align: left;
+            hyphens: auto;
+            margin: 0 auto; /* Zentriert den Absatzblock (wenn max-width definiert) */
+            max-width: 1000px; /* Begrenzte Breite für bessere Lesbarkeit */
+            font-size: 1.5rem;
+            font-family: 'ozuka-mincho-pr6n', serif; /* Verwendung der Schriftart */
+        }
+li {
+            margin-bottom: 5px; /* Fügt etwas Abstand zwischen den Listenelementen hinzu */
+            padding-left: 1.4em; /* Damit 2. Zeile auf gleicher Position beginnt */
+            text-indent: -1.4em; /* Damit 2. Zeile auf gleicher Position beginnt */
+        }
