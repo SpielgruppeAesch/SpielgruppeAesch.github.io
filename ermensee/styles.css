@@ -125,7 +125,7 @@ p {
     hyphens: auto;
     margin: 0 auto; /* Zentriert den Absatzblock (wenn max-width definiert) */
     max-width: 1000px; /* Begrenzte Breite für bessere Lesbarkeit */
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-family: 'ozuka-mincho-pr6n', serif; /* Verwendung der Schriftart */
     padding: 10px;
 }
