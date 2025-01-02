@@ -25,6 +25,14 @@ p {
     font-family: 'ozuka-mincho-pr6n', serif; /* Verwendung der Schriftart */
     padding: 10px;
 }
+@media (max-width: 1350px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+    p {
+        font-size: 1rem;
+    }
+}
 .container {
     text-align: center;
     justify-content: center; /* Zentriert das Bild horizontal */
