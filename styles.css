@@ -14,25 +14,19 @@ h1 {
     text-align: center; /* Header zentrieren */
     font-size: 2rem;
     font-family: 'ozuka-mincho-pr6n', serif; /* Verwendung der Schriftart */
+    color:  #1b3247; /* Farbe für Überschriften */
 }
-h2 {
-    text-align: center; /* Header zentrieren */
-    font-family: 'ozuka-mincho-pr6n', serif; /* Verwendung der Schriftart */
+p {
+    text-align: center; /* Zentriert den Text innerhalb der Absätze */
+    hyphens: auto;
+    margin: 0 auto; /* Zentriert den Absatzblock (wenn max-width definiert) */
+    max-width: 800px; /* Begrenzte Breite für bessere Lesbarkeit */
     font-size: 1.5rem;
-}
-h3 { /* Aesch */
-    text-align: center; /* Header zentrieren */
-    font-size: 1.75rem;
     font-family: 'ozuka-mincho-pr6n', serif; /* Verwendung der Schriftart */
-    margin: 5px 0;
-}
-h4 { /* Ermensee */
-    text-align: center; /* Header zentrieren */
-    font-size: 1.75em;
-    font-family: 'ozuka-mincho-pr6n', serif; /* Verwendung der Schriftart */
-    margin: 5px 0;
+    padding: 10px;
 }
 .container {
+    text-align: center;
     justify-content: center; /* Zentriert das Bild horizontal */
     align-items: center; /* Zentriert das Bild vertikal, falls der Container eine bestimmte Höhe hat */
     height: 100%; /* Höhe des Containers, wenn notwendig */
